@@ -104,20 +104,20 @@ Workflow en 5 étapes, appliqué systématiquement à chaque demande :
 - **Administration via Portainer** (gestion des conteneurs) et **pgAdmin** (gestion BDD).
 - Code source monté en lecture seule dans Nginx, réseau Docker isolé.
 
-### Projet 3 : Analyse de documents techniques (STS SESAM-Vitale)
+### Projet 3 : Analyse de documents techniques (manuel technique)
 
-- Analyse du **manuel STS SESAM-Vitale : 2 252 lignes** de spécifications.
+- Analyse du **manuel manuel technique : 2 252 lignes** de spécifications.
 - **874 tests de validation générés automatiquement** à partir des spécifications.
 - Couverture structurée : **8 fonctions × 6 modules** (organisation matricielle module × fonction).
 - Identifiants de test normalisés : `FCT_[description]` / `ERR_[code]` (discriminant en cas de doublon).
-- Arborescence d'environnement de test standardisée : `Tables/STS/`, `Tables/SSV/`, `Fichier_Sesam/`, `Librairies/`, `Jeux/STS/` (chemins relatifs).
+- Arborescence d'environnement de test standardisée : `Tables/`, `Tables/`, `Fichier_Config/`, `Librairies/`, `Jeux/` (chemins relatifs).
 - Démarche d'erreurs maîtrisée : injection de variantes de tables → détection → restauration.
 - **Format de sortie compatible avec l'outil de test interne** → tests directement exécutables dans la chaîne existante.
 
 ### Projet 4 : Intégration Google Workspace
 
 - **4 API connectées** : Drive, Calendar, Sheets, Gmail.
-- Automatisation de la gestion de fichiers (organisation Drive : arborescence `v2.0/Tests/STS_X/Fonction_Y/{PARAM,IN,OUT,REF}/`).
+- Automatisation de la gestion de fichiers (organisation Drive : arborescence `v2.0/Tests/MODULE_X/Fonction_Y/{PARAM,IN,OUT,REF}/`).
 - Planification automatisée d'événements (agenda, convention de titres validée).
 - Sheets pilotés par API (suivi sport et nutrition).
 
@@ -128,7 +128,7 @@ Workflow en 5 étapes, appliqué systématiquement à chaque demande :
 | Besoin du poste | Apport concret |
 |-----------------|----------------|
 | Productivité accrue | L'IA comme accélérateur : ce qui prenait des jours (874 tests) se génère en une session |
-| Génération de tests | Tests générés automatiquement à partir de spécifications (projet SESAM-Vitale : 2 252 lignes → 874 tests) |
+| Génération de tests | Tests générés automatiquement à partir de spécifications (projet technique : 2 252 lignes → 874 tests) |
 | Organisation des campagnes | Structure matricielle module × fonction, identifiants normalisés (`FCT_`/`ERR_`) |
 | Documentation & traçabilité | Plans de tests, README, CHANGELOG générés systématiquement à chaque livraison |
 | Reproductibilité | Approche modulaire : environnement standardisé, chemins relatifs, formats compatibles outil interne |
