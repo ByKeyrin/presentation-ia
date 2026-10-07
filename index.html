@@ -547,6 +547,7 @@
       </div>
       <div class="links">
         <a href="https://github.com/ByKeyrin">🐙 GitHub</a>
+        <a href="https://www.linkedin.com/in/kevin-leca-336a3511a/">💼 LinkedIn</a>
         <a href="mailto:lecak.kevin.pierre@gmail.com">✉️ Me contacter</a>
       </div>
     </div>
@@ -554,5 +555,25 @@
   </div>
 </footer>
 
+
+<!-- Back to top button -->
+<button id="backToTop" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="Remonter en haut">↑</button>
+<style>
+#backToTop{
+  position:fixed;bottom:24px;right:24px;z-index:999;
+  width:44px;height:44px;border-radius:50%;
+  background:var(--gold);color:#0d1117;border:none;
+  font-size:20px;font-weight:bold;cursor:pointer;
+  opacity:0;visibility:hidden;transition:opacity .3s,visibility .3s;
+  box-shadow:0 4px 12px rgba(245,166,35,.4);
+}
+#backToTop:hover{background:var(--gold2);transform:scale(1.1)}
+#backToTop.visible{opacity:1;visibility:visible}
+</style>
+<script>
+window.addEventListener('scroll',()=>{
+  document.getElementById('backToTop').classList.toggle('visible',window.scrollY>400);
+});
+</script>
 </body>
 </html>
