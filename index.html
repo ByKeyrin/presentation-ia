@@ -370,6 +370,36 @@
       <p>Plutôt qu'un chatbot unique, j'utilise <b>Hermes Agent (Nous Research)</b> comme <b>chef d'orchestre</b> (« Jarvis ») qui délègue le travail à des agents spécialisés — comme une petite équipe projet dont chaque membre est expert d'un domaine.</p>
     </div>
 
+    <h3 style="margin:24px 0 14px">🧠 Modèles LLM utilisés</h3>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th>Composant</th><th>Modèle</th><th>Rôle</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><b>Orchestrateur (Jarvis)</b></td>
+            <td>MiMo v2.5 <span class="tag blue">Xiaomi</span></td>
+            <td>Analyse des demandes, planification, délégation, vérification des livrables</td>
+          </tr>
+          <tr>
+            <td><b>Agents spécialisés</b></td>
+            <td>MiMo v2.5 / v2.6 <span class="tag blue">Xiaomi</span></td>
+            <td>Exécution des tâches par domaine (frontend, backend, QA, doc, DevOps)</td>
+          </tr>
+          <tr>
+            <td><b>Architecture</b></td>
+            <td>Hermes Agent Framework <span class="tag">Nous Research</span></td>
+            <td>Gestion des agents, mémoire persistante, outils, délégation inter-agents</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p style="margin-top:10px;color:var(--muted);font-size:13px">
+      💡 Chaque agent fonctionne sur un modèle LLM dédié, avec son propre contexte et ses outils. 
+      L'orchestrateur coordonne l'ensemble et vérifie les résultats avant livraison.
+    </p>
+
     <h3 style="margin-bottom:14px">👥 Mes agents spécialisés</h3>
     <div class="table-wrap">
       <table>
