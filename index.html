@@ -302,6 +302,63 @@
         </ul>
       </div>
     </div>
+
+    <h3 style="margin:30px 0 14px">🏠 Services hébergés en production</h3>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th>Service</th><th>Rôle</th><th>Technologie</th><th>Accès</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><b>🌐 Portail personnel</b></td>
+            <td>Application web (auth, dashboard)</td>
+            <td>Node.js · Express · PostgreSQL · Redis</td>
+            <td>Nginx reverse proxy</td>
+          </tr>
+          <tr>
+            <td><b>📁 FileBrowser</b></td>
+            <td>Gestionnaire de fichiers web</td>
+            <td>FileBrowser (Docker)</td>
+            <td>Nginx (/files/)</td>
+          </tr>
+          <tr>
+            <td><b>🗄️ pgAdmin</b></td>
+            <td>Administration base de données</td>
+            <td>pgAdmin 4 (Docker)</td>
+            <td>Nginx (/pgadmin/)</td>
+          </tr>
+          <tr>
+            <td><b>🐳 Portainer</b></td>
+            <td>Management des conteneurs Docker</td>
+            <td>Portainer CE (Docker)</td>
+            <td>Nginx (/portainer/)</td>
+          </tr>
+          <tr>
+            <td><b>📊 Netdata</b></td>
+            <td>Supervision temps réel (CPU, RAM, disque, réseau)</td>
+            <td>Netdata (Docker)</td>
+            <td>Nginx (/netdata/)</td>
+          </tr>
+          <tr>
+            <td><b>🗄️ PostgreSQL 17</b></td>
+            <td>Base de données du portail</td>
+            <td>PostgreSQL 17 (Docker)</td>
+            <td>Loopback uniquement</td>
+          </tr>
+          <tr>
+            <td><b>⚡ Redis</b></td>
+            <td>Cache et sessions</td>
+            <td>Redis Alpine (Docker)</td>
+            <td>Loopback uniquement</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p style="margin-top:12px;color:var(--muted);font-size:13px">
+      💡 Chaque service est conteneurisé, isolé, supervisé et accessible via Nginx (reverse proxy). 
+      Le tout tourne sur une VM auto-hébergée avec Tailscale pour l'accès distant sécurisé.
+    </p>
   </div>
 </section>
 
